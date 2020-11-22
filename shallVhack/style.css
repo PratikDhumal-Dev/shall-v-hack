@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: url(Waihou.png);
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -128,7 +128,7 @@ body {
 
 .title__1 {
     color: grey;
-    text-shadow: 3px 3px 5px #1c1c1c;
+    text-shadow: 3px 3px 5px black;
     outline-style: inherit;
     font-size: 4em;
     font-weight: 700;
@@ -463,61 +463,3 @@ footer.footer {
     text-shadow: 4px 6px 10px #989898;
     color: #ffe131;
 }
-
-body {
-    margin: 0;
-}
-
-#tsparticles {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.text {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 300px;
-    top: calc(50% - 100px);
-    left: calc(50% - 150px);
-}
-
-.img {
-    display: inline-block;
-    height: 100px;
-    z-index: 100;
-}
-
-.github {
-    bottom: 10px;
-    right: 10px;
-    position: fixed;
-    border-radius: 10px;
-    background: #fff;
-    padding: 0 12px 6px 12px;
-    border: 1px solid #000;
-}
-
-.github a:hover,
-.github a:link,
-.github a:visited,
-.github a:active {
-    color: #000;
-    text-decoration: none;
-}
-
-.github img {
-    height: 30px;
-}
-
-.github #gh-project {
-    font-size: 20px;
-    padding-left: 5px;
-    font-weight: bold;
-    vertical-align: bottom;
-}
-
-.firewall__1 {}
