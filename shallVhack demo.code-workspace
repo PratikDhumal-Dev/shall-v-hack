@@ -7,5 +7,7 @@
 		"path": "..\\..\\..\\Desktop\\Codes\\jquery-flipster-carousel"
 	}
 ],
-  "settings": {}
+"settings": {
+	"liveServer.settings.multiRootWorkspaceName": "shall-v-hack"
+}
 }

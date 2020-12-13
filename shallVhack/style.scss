@@ -51,3 +51,47 @@
     }
   }
 }
+
+.timeline {
+  $color: green;
+  $timeline-font-color: white;
+
+  padding: 0 60px;
+  margin: 50px 0 0 0;
+  position: relative;
+  counter-reset: list 0;
+
+  &-item {
+    list-style: none;
+    border-left: 4px solid $color;
+
+    &:last-child {
+      border-left-color: transparent;
+    }
+  }
+
+  &-title {
+    margin: 0;
+    padding: 0;
+    &:before {
+      $size: 40px;
+      color: $timeline-font-color;
+      position: relative;
+      left: -22px;
+      display: inline-block;
+      width: $size;
+      height: $size;
+      line-height: $size;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $color;
+      counter-increment: list;
+      content: counter(list);
+    }
+  }
+
+  &-text {
+    margin: 0;
+    padding: 40px;
+  }
+}
