@@ -185,6 +185,7 @@ body {
   position: absolute;
   margin-left: 2em;
   margin-top: -6.3em;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 h1 {
@@ -209,7 +210,7 @@ h1 {
   width: 100%;
   height: 100%;
   background: linear-gradient(-60deg, #004b55 0%, #02b694 50%, #b2b42f 100%);
-
+  opacity: 0.6;
   animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards infinite;
   transform: translateX(-101%);
 }
@@ -802,7 +803,8 @@ body {
 }
 
 #client {
-  margin-top: 80em;
+  margin-top: 100em;
+  margin-bottom: 14em;
 
   align-items: center;
   display: flex;
