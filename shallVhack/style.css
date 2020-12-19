@@ -97,6 +97,9 @@ body {
   transform: translate(0, -100%);
 }
 
+.navbar {
+}
+
 .nav-item {
   padding-left: 0.4em;
   padding-right: 0.4em;
@@ -182,6 +185,7 @@ body {
   position: absolute;
   margin-left: 2em;
   margin-top: -6.3em;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 h1 {
@@ -206,7 +210,7 @@ h1 {
   width: 100%;
   height: 100%;
   background: linear-gradient(-60deg, #004b55 0%, #02b694 50%, #b2b42f 100%);
-
+  opacity: 0.6;
   animation: a-ltr-after 2s cubic-bezier(0.77, 0, 0.18, 1) forwards infinite;
   transform: translateX(-101%);
 }
@@ -313,7 +317,7 @@ body {
 
 .text li {
   display: inline-block;
-
+  float: left;
   font-weight: 700;
   font-size: 2em;
   color: #fff;
@@ -464,7 +468,7 @@ footer.footer {
 
 #services {
   display: flex;
-
+  font-family: ocr-a-std, monospace;
   margin-left: 3em;
   margin-right: 3em;
 }
@@ -799,7 +803,8 @@ body {
 }
 
 #client {
-  margin-top: 80em;
+  margin-top: 103em;
+  margin-bottom: 14em;
 
   align-items: center;
   display: flex;
@@ -1512,7 +1517,7 @@ ul {
 }
 .footer-widget ul li {
   display: inline-block;
-
+  float: left;
   width: 50%;
   margin-bottom: 12px;
 }
@@ -1570,286 +1575,3 @@ ul {
   font-size: 14px;
   color: #878787;
 }
-
-/*Button*/
-#bttn {
-  height: 15vh;
-}
-#bttn a {
-  border-radius: 0.5em;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  padding-left: 12px;
-  padding-right: 12px;
-  font-size: 35px;
-  margin-top: -20px;
-  margin-left: 680px;
-}
-#bttn a:hover {
-  background-color: #000;
-}
-
-/*Blogs*/
-#business {
-  width: 1560px;
-  margin-left: -49px;
-}
-#business h2 {
-  margin-left: 100px;
-  margin-top: -10px;
-  font-size: 90px;
-  color: white;
-}
-
-/*Div1*/
-#offerings .slink {
-  text-decoration: none;
-}
-#offerings .flink {
-  text-decoration: none;
-}
-#offerings .tlink {
-  text-decoration: none;
-}
-#offerings {
-  display: flex;
-  margin-top: -182px;
-  margin-right: -8px;
-  margin-left: -10px;
-  height: 140vh;
-}
-
-#offerings .div1 img {
-  margin-left: 40px;
-  margin-top: 40px;
-  width: 270px;
-}
-#offerings .div1 img:hover {
-  position: relative;
-  top: 5px;
-  left: 0px;
-  width: 300px;
-  height: auto;
-  display: block;
-  z-index: 999;
-}
-#offerings .div1 {
-  margin-left: 80px;
-  margin-top: 220px;
-  background-color: whitesmoke;
-  width: 420px;
-  height: 640px;
-}
-#offerings .div1 .yellow {
-  margin-top: 20px;
-  margin-left: 28px;
-  font-size: 25px;
-  font-family: sans-serif;
-  color: black;
-}
-#offerings .div1 p {
-  color: grey;
-  margin-right: 20px;
-  margin-top: 0px;
-  font-size: 16px;
-  margin-left: 28px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-#offerings .div1 .card-footer {
-  margin-top: 40px;
-}
-#offerings .div1 .card-footer a {
-  margin-left: 160px;
-}
-
-/*Div2*/
-#offerings .div2 img {
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 300px;
-}
-#offerings .div2 img:hover {
-  position: relative;
-  top: 5px;
-  left: 0px;
-  width: 330px;
-  height: auto;
-  display: block;
-  z-index: 999;
-}
-#offerings .div2 {
-  margin-left: 60px;
-  margin-top: 220px;
-  background-color: whitesmoke;
-  width: 420px;
-  height: 640px;
-}
-#offerings .div2 .green {
-  margin-top: 25px;
-  font-size: 25px;
-  margin-left: 25px;
-  font-family: sans-serif;
-  color: black;
-}
-#offerings .div2 p {
-  margin-top: 15px;
-  color: grey;
-  margin-right: 20px;
-  font-size: 16px;
-  margin-left: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-#offerings .div2 .card-footer {
-  margin-top: 50px;
-}
-#offerings .div2 .card-footer a {
-  margin-left: 160px;
-}
-
-/*Div3*/
-#offerings .div3 img {
-  margin-left: 20px;
-  margin-top: 40px;
-  width: 300px;
-}
-#offerings .div3 img:hover {
-  position: relative;
-  top: 5px;
-  left: 0px;
-  width: 330px;
-  height: auto;
-  display: block;
-  z-index: 999;
-}
-#offerings .div3 {
-  margin-left: 80px;
-  margin-top: 220px;
-  background-color: whitesmoke;
-  width: 420px;
-  height: 640px;
-}
-#offerings .div3 .orange {
-  margin-top: 20px;
-  margin-left: 28px;
-  font-size: 25px;
-  font-family: sans-serif;
-  color: black;
-}
-#offerings .div3 p {
-  color: grey;
-  margin-right: 20px;
-  margin-top: 0px;
-  font-size: 16px;
-  margin-left: 28px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-#offerings .div3 .card-footer {
-  margin-top: 75px;
-}
-#offerings .div3 .card-footer a {
-  margin-left: 160px;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.item {
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  padding-top: 75px;
-  background: #ccc;
-  text-align: center;
-  color: #fff;
-  font-size: 3em;
-}
-
-.btn-1 {
-  font-family: Hack, monospace;
-  background: #0f0f6d;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 2em;
-  padding: 1.5rem;
-  border: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 10px;
-  width: auto;
-  position: relative;
-}
-
-.btn-1::after {
-  content: "\f054";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 400;
-  position: absolute;
-  left: 85%;
-  top: 31%;
-  right: 5%;
-  bottom: 0;
-  opacity: 0;
-}
-
-.btn-1:hover {
-  background: #2b2bff;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 6px 15px #0000ff61;
-  box-shadow: 0px 6px 15px #0000ff61;
-  padding: 1.5rem 3.5rem 1.5rem 1.5rem;
-}
-
-.btn-1:hover::after {
-  opacity: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.timeline {
-  padding: 0 60px;
-  margin: 50px 0 0 0;
-  position: relative;
-  counter-reset: list 0;
-}
-
-.timeline-item {
-  list-style: none;
-  border-left: 4px solid green;
-}
-
-.timeline-item:last-child {
-  border-left-color: transparent;
-}
-
-.timeline-title {
-  margin: 0;
-  padding: 0;
-}
-
-.timeline-title:before {
-  color: white;
-  position: relative;
-  left: -22px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: green;
-  counter-increment: list;
-  content: counter(list);
-}
-
-.timeline-text {
-  margin: 0;
-  padding: 40px;
-}
-/*# sourceMappingURL=style.css.map */
