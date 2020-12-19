@@ -468,7 +468,7 @@ footer.footer {
 
 #services {
   display: flex;
-
+  font-family: ocr-a-std, monospace;
   margin-left: 3em;
   margin-right: 3em;
 }

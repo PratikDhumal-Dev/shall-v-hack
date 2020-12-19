@@ -1454,3 +1454,205 @@ $(function () {
     }
   });
 });
+
+$("#recipeCarousel").carousel({
+  interval: 10000,
+});
+
+$(".carousel .carousel-item").each(function () {
+  var minPerSlide = 3;
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(":first");
+  }
+  next.children(":first-child").clone().appendTo($(this));
+
+  for (var i = 0; i < minPerSlide; i++) {
+    next = next.next();
+    if (!next.length) {
+      next = $(this).siblings(":first");
+    }
+
+    next.children(":first-child").clone().appendTo($(this));
+  }
+});
+
+//Allows bootstrap carousels to display 3 items per page rather than just one
+$(".carousel.carousel-multi .item").each(function () {
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(":first");
+  }
+  next
+    .children(":first-child")
+    .clone()
+    .attr("aria-hidden", "true")
+    .appendTo($(this));
+
+  if (next.next().length > 0) {
+    next
+      .next()
+      .children(":first-child")
+      .clone()
+      .attr("aria-hidden", "true")
+      .appendTo($(this));
+  } else {
+    $(this)
+      .siblings(":first")
+      .children(":first-child")
+      .clone()
+      .appendTo($(this));
+  }
+});
+
+$(document).ready(function () {
+  $("#myCarousel").on("slide.bs.carousel", function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item").eq(i).appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item").eq(0).appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
+
+$(document).ready(function () {
+  $("#news-slider").owlCarousel({
+    items: 3,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [980, 2],
+    itemsMobile: [600, 1],
+    navigation: true,
+    navigationText: ["", ""],
+    pagination: true,
+    autoPlay: true,
+  });
+});
+
+$(document).ready(function () {
+  $("#owl-example").owlCarousel({
+    items: 3,
+    navigation: true,
+    navigationText: [
+      "<i class='icon-chevron-left icon-white'><</i>",
+      "<i class='icon-chevron-right icon-white'>></i>",
+    ],
+    pagination: true,
+    responsive: true,
+    autoPlay: true,
+  });
+});
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 30,
+  dots: true,
+  nav: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 2,
+      margin: 10,
+      stagePadding: 20,
+    },
+    600: {
+      items: 3,
+      margin: 20,
+      stagePadding: 50,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
+
+jQuery(document).ready(function ($) {
+  "use strict";
+  $("#customers-testimonials").owlCarousel({
+    loop: true,
+    center: true,
+    items: 3,
+    margin: 30,
+    autoplay: true,
+    dots: true,
+    nav: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    navText: [
+      '<i class="fa fa-angle-left"></i>',
+      '<i class="fa fa-angle-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1170: {
+        items: 3,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
+
+$(".owl-carousel").owlCarousel({
+  loop: false,
+  stagePadding: 15,
+  margin: 10,
+  nav: true,
+  navText: [
+    '<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>',
+    '<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>',
+  ],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    640: {
+      items: 2,
+    },
+    960: {
+      items: 3,
+    },
+    1200: {
+      items: 4,
+    },
+  },
+});
+
+$(document).ready(function () {
+  $("#myCarousel").on("slide.bs.carousel", function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item").eq(i).appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item").eq(0).appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
+z;
