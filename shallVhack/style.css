@@ -1759,6 +1759,9 @@ ul {
 #offerings .div3 .card-footer a {
   margin-left: 160px;
 }
+#clients_small {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .title_main {
@@ -1883,4 +1886,46 @@ ul {
   .text-muted {
     text-shadow: 4px 6px 10px white !important;
   }
+
+  .controls-top {
+    position: absolute;
+    margin-left: -10em !important;
+    margin-top: 5.5em;
+  }
+
+  .client_title {
+    position: absolute;
+    margin-left: 5em !important;
+    margin-top: 45em !important;
+
+    font-size: 1.5em;
+  }
+
+  #steps_to_security {
+    position: absolute;
+    margin-top: 200em !important;
+    margin-bottom: -200em !important;
+  }
+  #client {
+    display: none;
+  }
+
+  #steps_to_Security {
+    margin-top: 180em !important;
+  }
+
+  #business {
+    margin-top: 20em;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
 }
