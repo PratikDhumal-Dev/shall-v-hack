@@ -5,7 +5,7 @@ body {
     #02b694 50%,
     #b2b42f 100%
   );
-  background-size: contain;
+  background-size: auto;
   font-family: ocr-a-std, monospace;
   font-style: normal;
   scroll-behavior: smooth;
@@ -1766,5 +1766,121 @@ ul {
     height: 20vh;
     width: auto;
     object-fit: contain;
+  }
+
+  #ffa0e257-4b46-4632-a8d6-93195cbf254d {
+    position: absolute;
+    margin-top: 37em;
+    margin-left: -1.4em;
+    height: 3.4em;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .title_text {
+    position: absolute;
+    margin-top: 335em;
+    margin-left: -15em;
+    height: 2em !important;
+    width: 50em;
+    font-size: 0.14em !important;
+  }
+
+  #services {
+    margin-top: 25em !important;
+    height: 1em !important;
+    object-fit: contain;
+  }
+  .services_title {
+    position: absolute;
+    height: 0.5em;
+    margin-left: -50em !important;
+    margin-top: -1em;
+    font-size: x-large;
+  }
+  .nav_logo {
+    margin-top: -0.5em;
+    margin-left: -1.5em;
+  }
+
+  .controls-top {
+    position: absolute;
+    display: flex;
+    margin-left: 7.6em !important;
+    margin-top: 2em;
+  }
+
+  .carousel-inner {
+    display: none;
+    margin-top: 6em !important;
+  }
+  .card mb-2 {
+    position: absolute;
+    height: 1em !important;
+    width: 5em !important;
+  }
+
+  #gotHacked {
+    margin-top: 40em !important;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  #a3f4169a-5e5e-4255-abcc-1b8759c50498 {
+    position: absolute;
+    margin-top: -20em;
+    margin-left: 3.6em !important;
+    height: 15em;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .title_2_main {
+    position: absolute;
+    margin-top: 335em;
+
+    height: 3em !important;
+    width: 50em;
+    font-size: 0.14em !important;
+  }
+
+  .subtitle__2 {
+    position: absolute;
+    margin-left: -1.7em !important;
+    margin-top: 2em;
+    width: 14em;
+    text-align: center;
+  }
+
+  .title_2 {
+    margin-top: -2em;
+    font-size: x-large;
+    width: 10em;
+    margin-left: 3.5em;
+  }
+
+  .title_2_background {
+    display: none;
+  }
+
+  .services_title_main {
+    margin-left: 0.7em !important;
+  }
+
+  .col-md-6 px-md-5 {
+    position: absolute;
+    margin-top: -50em !important;
+  }
+
+  .firewall__1 {
+    position: absolute;
+    margin-top: -30em !important;
+    margin-left: -15em !important;
+  }
+
+  .text-muted {
+    text-shadow: 4px 6px 10px white !important;
   }
 }
